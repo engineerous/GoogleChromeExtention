@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "change background color",
+
+  "icons": {
+      "16" : "/pic/apple-music.png",
+      "48" : "/pic/apple-music.png",
+      "128" : "/pic/apple-music.png"
+  },
+
+ "action": {
+  "default_icon": "/pic/apple-music.png",
+  "default_popup": "popup.html", 
+  "default_title" : "my extension"
+ },
+
+  "permissions": ["activeTab"],
+
+  "content_scripts" :[
+    {
+        "matches": ["https://www.google.com/*"],
+        "css" : ["main.css"],
+        "js" : ["scripts.js"]
+    }
+  ]
+}
