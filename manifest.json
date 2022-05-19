@@ -16,7 +16,7 @@
   "default_title" : "my extension"
  },
 
-  "permissions": ["activeTab"],
+  
 
   "content_scripts" :[
     {
